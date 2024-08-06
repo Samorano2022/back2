@@ -1,0 +1,26 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 10px 30px;
+    background: #ee3123;
+    border-radius: 8px;
+}
+button::after{
+    content: url('/JBL/Project/src/Vectorarrow\ right.svg');
+    position: absolute;
+    margin-left: 5px;
+    background: #0000;
+}
+.about__left{
+background: #262626;
+}
+.hero__page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__bottom{
+    display: flex;
+}

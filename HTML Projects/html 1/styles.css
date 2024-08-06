@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+
+}
+
+.header {
+  background-color: aqua;
+  height: 50px;
+}
+.sub__header {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar > a {
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+  /* gap: 50px */
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #ccbdff;
+  height: 50px;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+}
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.hero__page {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 50px auto;
+}
+.left__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+span {
+  color: rgb(184, 64, 193);
+}
+
+.section{
+    min-height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1.5em minmax(400px, 500px) minmax(350px, 600px) auto; */
+    grid-template-areas: "card__one";
+}
+
+.card__one{
+    height: 150px;
+    background: #404040;
+}
+.card__two{
+    height: 150px;
+    background: green;
+}
+.card__three{
+    height: 150px;
+    background: yellow;
+}
+.card__four{
+    height: 150px;
+    background: blue;
+}
+.card__one, .card__two{
+  /* grid-column: 1/4; */
+}
+.abc{
+  display: flex;
+  align-items: center;
+  
+}
+.card_top{
+  display: flex;
+}
+
+.sectionpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sectionpage>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* New styles */
+.hero__page{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.background{
+  background: #28293F;
+  height: 100vh;
+}
+
+.hero__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  display: flex;
+  gap: 50px;
+}
+.hero__bottom{
+  display: flex;
+  align-items: center;
+}
+h1{
+  font-size: 76px;
+  color: #fff;
+}
