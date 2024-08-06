@@ -1,0 +1,42 @@
+.header{
+    width: 100vw;
+    height: 95px;
+    background: rgb(255, 255, 255);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.img{
+   object-fit: contain;
+   width: 50%;
+}
+
+.header__btn{
+    background: #171717;
+    color: white;
+    padding: 12px;
+    width: 145px;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 200;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__link{
+    display: flex;
+    gap: 24px;
+}
+.nav__link a{
+    font-size: 14px;
+}
+.logo{
+    width: 30%;
+}

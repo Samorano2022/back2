@@ -1,0 +1,68 @@
+.interpage{
+    height: 100%;
+    padding: 100px 0px;
+    background: #000;
+}
+
+.inter__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+}
+
+.inter__title{
+    font-size: 74px;
+    font-weight: 500;
+}
+
+.inter__top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inter__cardOne{
+    height: 500px;
+    background: url('/assets/cardtext.png');
+    background-size: cover;
+    padding: 24px 32px;
+    
+}
+.inter__cardOne__text{
+    font-size: 16px;
+    color: white;
+}
+.inter__cardTwo{
+    background: url('/assets/intertwo.png');
+    background-size: cover;
+    padding: 24px 32px;
+}
+.inter__body{
+    display: grid;
+    grid-template-rows: auto;
+}
+.inter__bottom{
+    background: url(/assets/motionpic.png);
+    background-size: cover;
+    height: 500px;
+    padding: 24px 32px;
+}
+.threedee{
+    padding-top: 30px;
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+}
+.interdesign{
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.motiondesign{
+    padding-top: 30px;
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+}

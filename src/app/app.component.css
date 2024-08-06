@@ -1,0 +1,56 @@
+/* .heropage{
+    height: 100vh;
+    width: 100vw;
+    background: #040000;
+}
+
+.hero__container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    place-items: start;
+    padding-top: 7%;
+    
+}
+.hero__text{
+    width: 70%;
+    color: var(--primary)
+
+}
+.myName{
+    font-size: 94px;
+    font-weight: 800;
+    line-height: 115%;
+    color: var(--textcolor);
+}
+.job__title{
+    font-size: 26px;
+    font-weight: 200;
+    color: var(--textcolor);
+
+}
+.hero__btn{
+    width: 225px;
+    padding: 0 16px;
+    height: 62px;
+    color: white;
+    background-color: black;
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon__circle{
+    background: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.hero__right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} */

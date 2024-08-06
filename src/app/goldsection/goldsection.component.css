@@ -1,0 +1,27 @@
+.goldsection{
+    height: 100%;
+    background: rgb(255, 208, 89);
+}
+.gold__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 0;
+}
+
+.gold__title{
+    font-size: 84px;
+    font-weight: 400;
+}
+.gold__text{
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 118%;
+}
+.section__one{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
