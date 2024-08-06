@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  text-decoration: none;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(assetfootball/footballbg.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__main {
+  width: 100%;
+  /* height: 70%; */
+  margin: auto;
+  display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+  gap: 48px;
+}
+
+.header__wrapper {
+  /* width: 100%; */
+  height: 80px;
+}
+.header__desktop {
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mid {
+  background: var(--header-color);
+  backdrop-filter: blur(250px);
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 40%;
+}
+
+.header {
+  width: 100vw;
+  transition: all 0.3s;
+  position: fixed;
+  background: #fff;
+  z-index: 5;
+  left: 0;
+}
+
+.header__text {
+  font-size: clamp(12px, 2.5vw, 13px);
+}
+
+.header__btn {
+  background: linear-gradient(90.99deg, #8349e9 6.3%, #ec167f 110.67%);
+  border-radius: 100px;
+  font-size: 12px;
+  color: white;
+  padding: 15px;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.header__links a {
+  color: #0C0C0C;
+  font-family: 'Figtree', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  cursor: pointer;
+}
+.header__bar {
+  background: #fff;
+  box-shadow: #282828;
+}
+.header__mobile {
+  display: none;
+}
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+}
+.register__btn{
+  display: flex;
+width: 120px;
+height: 42px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 100px;
+border: 1px solid #FDFDFD;
+color: #020181;
+background: #ece8ff;
+font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+.register__btn:hover{
+  background: #020181;
+  color: white;
+  border: none;
+}
+.hero__btn {
+  width: fit-content;
+  padding: 18px 28px;
+  border-radius: 108.543px;
+  background: #0c0c0c;
+  box-shadow: 0px 6.513px 17.367px 0px rgba(22, 67, 142, 0.3);
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+  width: 180px;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: #fff;
+  border-radius: 108.543px;
+  background: #020181;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+.ctn__btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.larger__text {
+  color: #fff;
+  font-family: 'Figtree', sans-serif;
+text-align: center;
+font-size: 74px;
+font-style: normal;
+font-weight: 700;
+line-height: 112%; /* 94.08px */
+letter-spacing: 1.68px;
+width: 95%;
+}
+.head__one {
+  width: 700px;
+  color: #FFF;
+text-align: center;
+font-family: 'Figtree', sans-serif;
+font-size: 18px;
+font-style: normal;
+line-height: 164%; /* 32.8px */
+letter-spacing: 0.04px;
+}
+h3 {
+  color: #FFF;
+  font-family: 'Figtree', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 117.465%; /* 28.192px */
+letter-spacing: 0.48px;
+}
+
+/* Slideshow */
+section {
+    width: 100%;
+    height: 450px;
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide-show-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  /* CSS Styles in common for all slides */
+  .wrapper-one,
+  .wrapper-two,
+  .wrapper-three {
+    background-color: #eee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  /* CSS Styles for each slide */
+  /* Just add the image as background attribute and add some animation */
+  
+  .wrapper-one {
+      background-image: url(assetfootball/footballbg.png);
+  }
+  
+  .wrapper-two {
+      background-image: url(assets/herobgg.png);
+    animation: slideTwoAnim 20s infinite;
+  }
+  
+  .wrapper-three {
+      background-image: url("http://www.stnlatam.com/images/pitch/pitch3.jpg");
+    animation: slideThreeAnim 20s infinite;
+  }
+  
+  /* Styles for the text */
+  .wrapper-text {
+    font: 700 40px/1.4 Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  
+  /* Animations */
+  @keyframes slideTwoAnim {
+      0%{opacity:0;}
+      17%{opacity:0;}
+      33%{opacity:1;}
+      50%{opacity:1;}
+      67%{opacity:0;}
+      100%{opacity:0;}
+  }
+  
+  @keyframes slideThreeAnim {
+      0%{opacity:0;}
+      50%{opacity:0;}
+      67%{opacity:1;}
+      83%{opacity:1;}
+      100%{opacity:0;}
+  }

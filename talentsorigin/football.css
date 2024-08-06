@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  text-decoration: none;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: url(assetfootball/footballbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__main {
+  width: 100%;
+  /* height: 70%; */
+  margin: auto;
+  display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+  gap: 48px;
+}
+
+.header__wrapper {
+  /* width: 100%; */
+  height: 80px;
+}
+.header__desktop {
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mid {
+  background: var(--header-color);
+  backdrop-filter: blur(250px);
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 40%;
+}
+
+.header {
+  width: 100vw;
+  transition: all 0.3s;
+  position: fixed;
+  background: #fff;
+  z-index: 5;
+  left: 0;
+}
+
+.header__text {
+  font-size: clamp(12px, 2.5vw, 13px);
+}
+
+.header__btn {
+  background: linear-gradient(90.99deg, #8349e9 6.3%, #ec167f 110.67%);
+  border-radius: 100px;
+  font-size: 12px;
+  color: white;
+  padding: 15px;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.header__links a {
+  color: #0C0C0C;
+  font-family: 'Figtree', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  cursor: pointer;
+}
+.header__bar {
+  background: #fff;
+  box-shadow: #282828;
+}
+.header__mobile {
+  display: none;
+}
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+}
+.register__btn{
+  display: flex;
+width: 120px;
+height: 42px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 100px;
+border: 1px solid #FDFDFD;
+color: #020181;
+background: #ece8ff;
+font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+.register__btn:hover{
+  background: #020181;
+  color: white;
+  border: none;
+}
+.hero__btn {
+  width: fit-content;
+  padding: 18px 28px;
+  border-radius: 108.543px;
+  background: #0c0c0c;
+  box-shadow: 0px 6.513px 17.367px 0px rgba(22, 67, 142, 0.3);
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+  width: 180px;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: #fff;
+  border-radius: 108.543px;
+  background: #020181;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+.ctn__btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+
+.larger__text {
+  color: #fff;
+  font-family: 'Figtree', sans-serif;
+text-align: center;
+font-size: 74px;
+font-style: normal;
+font-weight: 700;
+line-height: 112%; /* 94.08px */
+letter-spacing: 1.68px;
+width: 95%;
+}
+.head__one {
+  width: 700px;
+  color: #FFF;
+text-align: center;
+font-family: 'Figtree', sans-serif;
+font-size: 18px;
+font-style: normal;
+line-height: 164%; /* 32.8px */
+letter-spacing: 0.04px;
+}
+h3 {
+  color: #FFF;
+  font-family: 'Figtree', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 117.465%; /* 28.192px */
+letter-spacing: 0.48px;
+}
+
+/* About Us */
+.players__section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+  }
+  .player__paragraph{
+     width: 500px;
+     color: #545454;
+     font-family: 'Figtree', sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 26px; /* 160% */
+  }
+  .football__container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .football__title {
+    width: 600px;
+    color: #0C0C0C;
+  font-family: 'Figtree', sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 111%; 
+  }
+  .football__up{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* section two */
+  .section__two{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+  }
+  .history__container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .football__paragraph{
+    width: 600px;
+    color: #545454;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  /* section Three */
+  .section__three{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0;
+  }
+
+  .section__twoContainer{
+    width: 80%;
+    margin: 0;
+    background: url(assetfootball/centerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 42px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+
+  }
+  .section__twoBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin: 0;
+    /* background: #000; */
+  }
+  .three__text{
+    width: 800px;
+    color: #fff;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    text-align: center;
+  }
+
+  .three__title {
+    width: 800px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 111%;
+  }
+  /* Snippet section */
+.snippet__title {
+    width: 800px;
+    color: #0C0C0C;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 111%; 
+  }
+.snippet__section{
+    height: 100%;
+  }
+.snippet__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+  }
+.snippet__container{
+    width: 80%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.snippet__list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+  }
+.snippet__one{
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #067C04;
+    background: #E9FFE9;
+  }
+.snippet__two{
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #067C04;
+    background: #E9FFE9;
+}
+
+.snippet__three{
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #067C04;
+    background: #E9FFE9;
+}
+
+.snippet__four{
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #067C04;
+    background: #E9FFE9;
+}
+
+.snip__text{
+    color: #0C0C0C;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    }
+
+.snip__title{
+    color: #0C0C0C;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    }
+
+/* needshow__section */
+.needshow__section{
+    height: 70vh;
+    }
+.needshow__container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  
+    width: 80%;
+    margin: 0;
+    }
+.needshow__title{
+    color: #0C0C0C;
+    font-family: 'Figtree', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    }
+.card__text{
+        color: #fff;
+        font-family: 'Figtree', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+.card__title{
+        color: #02B703;
+        font-family: 'Figtree', sans-serif;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px; 
+    }
+.card__one{
+    padding: 10px;
+    width: 256px;
+    height: 297px;
+    background: linear-gradient(171deg, rgba(0, 0, 0, 0.08) 10.08%, rgba(0, 0, 0, 0.75) 68.31%),
+     url(assetfootball/cardone.png), lightgray 50% / cover no-repeat;
+}
+.card__two{
+    width: 256px;
+    height: 297px;
+    background: linear-gradient(171deg, rgba(0, 0, 0, 0.08) 10.08%, rgba(0, 0, 0, 0.75) 68.31%), 
+    url(assetfootball/cardtwo.png), lightgray 50% / cover no-repeat;
+}
+.card__three{
+    width: 256px;
+    height: 297px;
+    background: linear-gradient(171deg, rgba(0, 0, 0, 0.08) 10.08%, rgba(0, 0, 0, 0.75) 68.31%), 
+    url(assetfootball/cardtwo.png), lightgray 50% / cover no-repeat;
+}
+.card__four{
+    width: 256px;
+    height: 297px;
+    background: linear-gradient(171deg, rgba(0, 0, 0, 0.08) 10.08%, rgba(0, 0, 0, 0.75) 68.31%), 
+    url(assetfootball/cardtwo.png), lightgray 50% / cover no-repeat;
+}
+.needshow__body{
+    display: flex;
+    gap: 15px;
+}
+
+/* participation viewer */
+.part__title{
+    color: #0C0C0C;
+    font-family: 'Figtree', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+}
+.part__text{
+    width: 300px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.part__section{
+    height: 100vh;
+}
+.part__container{
+    width: 80%;
+    margin: 0;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/* location__section */
+.location__section{
+    height: 80vh;
+    background-color: #067C04;
+}
+.location__container{
+    width: 80%;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+.location__title{
+    color: white;
+    font-family: 'Figtree', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+}
+.location__text{
+    color: white;
+        width: 300px;
+        font-family: 'Figtree', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+}
+
+/* Prize Section*/
+.prize__container{
+    width: 80%;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+.prize__title{
+    color: #0C0C0C;
+    font-family: 'Figtree', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.prize__text{
+    color: #0C0C0C;
+        width: 300px;
+        font-family: 'Figtree', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+}
+.prize__section{
+    height: 80vh;
+}
+
+/* Same Section with Talent Origin */
+
+/* Certificate Section */
+.cert__container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 66px;
+    width: 80%;
+  
+  }
+  .cert__bottom{
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding-left: 60px;
+  }
+  .cert__title {
+    width: 600px;
+    color: #0C0C0C;
+    font-family: 'Figtree', sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 111%; /* 57.72px */
+    text-align: center;
+  }
+  .cert__section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .cert__body{
+    /* width: 100%; */
+  }
+  .contact__section{
+    height: 80vh;
+    background: url(assets/contactpage.png);
+    display: flex;
+    align-items: center;
+  }
+  .contact__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  span{
+    color: #020181;
+  }
+  .contact__links{
+    display: flex;
+    gap: 16px;
+  }
+  .contact__title{
+    color: #020D10;
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 102.564%; /* 89.231px */
+  }
+  .contact__pageUp{
+    color: #020D10;
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 102.564%; /* 89.231px */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  }
+  .contact__paragraph{
+    color: #282828;
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+  }
+  .cardcontainer{
+    display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+  width: 80%;
+  margin: auto;
+  }
+  .contact__text{
+    color: #FDFDFD;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px; /* 166.5% */
+  }
+  .chat__title, .email__title, .phone__title, .visit__title{
+    color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.3px; /* 138.75% */
+  }
+  .contact__cardOne, .contact__cardTwo, .contact__cardThree, .contact__cardFour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 356px;
+  height: 230px;
+  border-radius: 20px;
+  /* border: 1px solid #BEBEBE; */
+  background: url(assets/cardpicbg.png);
+  /* background: linear-gradient(0deg, rgba(5, 36, 85, 0.91) 0%, rgba(5, 36, 85, 0.91) 100%), url(assets/cardpicbg.png), lightgray 50% / cover no-repeat; */
+  }
+  .contact__cardContainer{
+    width: 90%;
+    margin: auto;
+  }
+  .chat__btn{
+    display: flex;
+  width: 110px;
+  height: 47px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: #FFF;
+  color: #052455;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164.205%; /* 29.557px */
+  }
+  .chat__btn:hover{
+    background: #020D10;
+    color: #FDFDFD;
+    
+  }
+  .tel__details{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .email__btn{
+  display: flex;
+  width: 118px;
+  height: 47px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #FDFDFD;
+  color: #FDFDFD;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164.205%; /* 29.557px */
+  }
+  .email__btn:hover{
+    background: #020D10;
+    color: #FDFDFD;
+    border: none;
+  }
+  
+  
+  /* Footer Section */
+  
+  
+  .footer__section{
+    width: 1928px;
+  background: #020D10;
+  display: flex;
+  align-items: center;
+  }
+  .footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* justify-content: center; */
+    gap:60px;
+    width: 100%;
+    margin: auto;
+  }
+  .footer__bodyUp{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 100px;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+  }
+  .footer__links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer__links a, .adress__text, .socials__title, .subsid__title, .subsid__name {
+    color: #FDFDFD;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .address__details{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .address__rowOne{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .address__detailUp, .address__detailBottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer__Four{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .socials{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .copyright__container{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright__text{
+    color: #FDFDFD;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .subsidiaries{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
